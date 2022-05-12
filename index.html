@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#top_banner_box>p>input').click(function(){
+				$('#hidden_banner').slideToggle()
+
+			})
+			$('#top_banner_box>p>img').click(function(){
+				$('#hidden_banner').slideToggle()
+
+			})
+
+		}) //전체괄호
+	   </script>	 
+	<style>
+		@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);.notosanskr * {  font-family: 'Noto Sans KR', sans-serif;
+	}
+	*{margin: 0;padding: 0;list-style: none; font-family: 'Noto Sans KR', sans-serif;
+}
+		#hidden_banner{background-color: #fefad4;}
+		#top_banner_box{width: 960px;height: 100px;margin: auto;position: relative;}
+		#top_banner_box>p{width: 200px;height: 25px;position: absolute;right: 0;bottom: 0;font-size: 14px;line-height: 25px;}
+		#top_banner_box>p>img{vertical-align: middle;}
+		#top_banner_box>p>input{vertical-align: middle;}
+		header{width: 100%;height: 148px;}
+		#header1{width: 100%;height: 39px;border-bottom: 1px solid #c5c5c5;background-color: #f6f6f6;}
+		#header1_menu1{width: 1000px;height: 38px;margin: auto;position: relative;background-color: #f6f6f6;}
+		#header1_menu1>h1{float: left;height: 39px;margin-right: 20px;}
+		#header1_menu1>h1>img{width: 100%;}
+		#header1_menu1_bt1{width: 335px;height: 39px;text-align: center;float: left;}
+		#header1_menu1_bt1>li{float: left;line-height: 39px;text-align: center;}
+		#header1_menu1_bt1>li:nth-child(1){width: 120px;height: 41px;background-color: #fff;}
+		#header1_menu1_bt1>li:nth-child(2){width: 120px;height: 39px;}
+		#header1_menu1_bt1>li:nth-child(3){width: 91px;height: 39px;}
+		#header1_menu1_bt2{width: 300px;height: 45px;float: right;}
+		#header1_menu1_bt2>li{float: left;width: 100px;height: 39px;} 
+		#header1_menu1_bt2>li:nth-child(1){background-color:#ff7f02 ;color: #fff;}
+		#header1_menu1_bt2>li:nth-child(2){background-color: #2dbdca;color: #fff;}
+		#header1_menu1_bt2>li:nth-child(3){background-color: #892fd5;color: #fff;}
+		#header2{width: 100%;height: 63px;border-bottom: 2px solid #ff7126;overflow: hidden;}
+		#header2_menu_box{width: 1000px;height: 63px;margin: auto;position: relative;overflow: hidden;}
+		#header2_menu_box>h2{width: 115px;height: 50px;position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto;}
+		#header2_menu_search{width: 230px;height: 40px;float: left;margin-top: 10px;border: 1px solid #dadada;}
+		#header2_menu_search>input{width: 200px;height: 20px;margin-top: 11px;float: left;border: 1px solid #fff;}
+		#header2_menu_search>img{width: 19px;height: 19px;float: right;margin-top: 11px;margin-right: 5px;}
+		#header2_menu_srch>li>input{width: 230px;height: 40px;border: 1px solid #ccc;}
+		#header2_menu_box_menu_bt{width: 190px;height: 20px;float: right;margin-top: 20px;}
+		#header2_menu_box_menu_bt>li{height: 20px;display: inline-block;font-size: 10px;line-height: 20px;color: #828282;}
+		#header2_menu_box_menu_bt>li:last-child{margin: 0;}
+		#header2_menu_box_menu_bt>li::after{content: '|';margin: 5px;color: #b2b2b2;}
+		#header2_menu_box_menu_bt>li:last-child::after{content: '';}
+		#header3{width: 100%;height: 41px;border-bottom: 1px solid #cccc;position: relative;}
+		#header3_menu_box>img{width: 25px;height: 25px;position: absolute;right: 340px;top: 7px;}
+		#header3_menu_box{width: 1000px;height: 41px;margin: auto;}
+		#header3_menu_box>ul{margin-left: 50px;}
+		#header3_menu_box>ul>li{display: inline-block;	margin-right: 110px;line-height: 41px;font-size: 17px;}
+		#header3_menu_box>ul>li:last-child{margin-right: 0;}
+		/*  */
+		#slide{width: 100%;height: 570px;background: url(images/slide1_bg.jpg)center no-repeat;position: relative;background-size: cover;}
+		#slide_txt{width: 100%;height: 570px;margin: auto;background: url(images/slide1_txt.png)center no-repeat;}
+		#slide_bt{width: 220px;height: 30px;position: absolute;left: 0;right: 0;bottom: 0;margin: auto;}
+		#slide_bt>li{width: 14px;height: 14px;background-color: #fff;border-radius: 14px;display: inline-block;vertical-align: middle;margin-right: 5px;transition: 0.5s;}
+		#slide_bt>li:hover:nth-child(2){background-color: #ff4c2b;}
+		#slide_bt>li:hover:nth-child(3){background-color: #ff4c2b;}
+		#slide_bt>li:hover:nth-child(4){background-color: #ff4c2b;}
+		#slide_bt>li:hover:nth-child(6){background-color: #ff4c2b;}
+		#slide_bt>li:hover:nth-child(7){background-color: #ff4c2b;}
+		#slide_bt>li:hover:nth-child(8){background-color: #ff4c2b;}
+		#slide_bt>li:hover:nth-child(9){background-color: #ff4c2b;}
+		#slide_bt>li:first-child{width: 19px;height: 19px;background: url(icons/btn_slide_control.png)left no-repeat;}
+		#slide_bt>li:nth-child(5){background-color: #ff4c2b;}
+		#slide_bt>li:last-child{margin-right: 0;}
+		/*  */
+		#new_product{width: 100%;height: 920px;}
+		#new_product_box{width: 1000px;height: 920px;margin: auto;position: relative;}
+		#new_product_box_tit{width: 1000px;height: 65px;background-color: #eeeeee;margin-top: 70px;text-align: center;}
+		#new_product_box_tit>h2{line-height: 65px;font-weight: 400;color:#666666;font-size: 20px;}
+		#new_product_box_line{width: 1000px;height: 1px;background-color: #6f6f6f;margin-top: 65px;}
+		#new_product_box_inner_box{width: 370px;height: 120px;background-color: #fff;	position: absolute;left: 0;right: 0;top: 90px;z-index: 999;margin: auto;padding: 20px;box-sizing: border-box;text-align: center;}
+		#new_product_box_inner_box>h2{font-size: 40px;font-weight: 900;}
+		#new_product_box_inner_box>h3{font-size: 13px;font-weight: 300;}
+		#new_product_img_box1{width: 1000px;height: 260px;margin-top: 100px;}
+		#new_product_img_box1>li{width: 235px;height: 260px;float: left;margin-right: 20px;text-align: center;}
+		#new_product_img_box1>li>.img_fixde{width: 235px;height: 165px;overflow: hidden;}
+		#new_product_img_box1>li:hover>.img_fixde>img{transform: scale(1.1);}
+		#new_product_img_box1>li:last-child{margin-right: 0;}
+		#new_product_img_box1>li>.img_fixde>img{width: 100%;transition: 0.5s;}
+		#new_product_img_box1>li>h5{margin-top: 20px;color: #3b3b3b;font-size: 12px;font-weight: 200;}
+		#new_product_img_box1>li>h4{margin-top: 5px;color: #3b3b3b;font-size: 15px;font-weight: 500;}
+		#new_product_img_box2{width: 1000px;height: 260px;margin-top: 20px;}
+		#new_product_img_box2>li{width: 235px;height: 260px;float: left;margin-right: 20px;text-align: center;}
+		#new_product_img_box2>li>.img_fixde2{width: 235px;height: 165px;overflow: hidden;}
+		#new_product_img_box2>li:hover>.img_fixde2>img{transform: scale(1.1);}
+		#new_product_img_box2>li:last-child{margin-right: 0;}
+		#new_product_img_box2>li>.img_fixde2>img{width: 100%;transition: 0.5s;}
+		#new_product_img_box2>li>h5{margin-top: 20px;color: #3b3b3b;font-size: 12px;font-weight: 200;}
+		#new_product_img_box2>li>h4{margin-top: 5px;color: #3b3b3b;font-size: 15px;font-weight: 500;}
+		/*  */
+		#tiket_promo{width: 100%;height: 530px;background-color: #f7f7f7;}
+		#tiket_promo_box{width: 1000px;height: 530px;background-color: #f7f7f7;margin: auto;text-align: center;overflow: hidden;}
+		#tiket_promo_box>h2{margin-top: 65px;font-size: 40px;font-weight: 900;letter-spacing: -2px;color: #272830;}
+		#tiket_promo_box>h5{margin-top: 20px;font-size: 14px;font-weight: 600;color: #272830;}
+		#tiket_promo_box_img{width: 1000px;height: 240px;background-color: #fff;margin-top: 45px;overflow: hidden;}
+		#tiket_promo_box_img>ul{width: 1000px;height: 185px;margin-top: 27px;}
+		#tiket_promo_box_img>ul>li{width: 199px;height: 185px;border-right: 1px solid #ececec;float: left;text-align: center;}
+		#tiket_promo_box_img>ul>li:last-child{border: none;}
+		#tiket_promo_box_img>ul>li>h4{color: #3b3b3b;font-size: 13px;}
+		#tiket_promo_box_img>ul>li>img{width: 60px;height: 60px;margin-top: 18px;}
+		#tiket_promo_box_img>ul>li>h3{margin-top: 16px;font-size: 16px;color: #272830;}
+		#tiket_promo_box_img>ul>li>p{margin-top: 10px;color: #ff4c2b;font-size: 14px;letter-spacing: -1px;}
+		#tiket_button{width: 250px;height: 50px;border: 2px solid #ff4c2b;border-radius: 30px;margin: auto;background-color: #fff;margin-top: 20px;text-align: center;position: relative;}
+		#tiket_button>img{position: absolute;right: 30px;top: 0;bottom: 0;margin: auto;}
+		#fw700{font-weight: 700;}
+		#tiket_button>h3{font-weight: 200;font-size: 15px;line-height: 50px;color: #444444;}
+		/*  */
+		#enjoy_product{width: 100%;height: 480px;background: url(images/joy_bg.jpg)center no-repeat;}
+		#enjoy_product_box{position: relative;	width: 1000px;height: 480px;margin: auto;overflow: hidden;}
+		#enjoy_product_tit{width: 460px;height: 90px;position: absolute;left: 0;right: 0;margin: auto;z-index: 99999;margin-top: 60px;text-align: center;background-color: #f8ebef;}
+		#enjoy_product_tit>img{width: 80%;margin-top: 15px;}
+		#enjoy_product_tit_line{width: 1000px;height: 1px;background-color: #b17b8c;margin-top: 100px;}
+		#enjoy_product_tit_img{width: 1000px;height: 265px;margin-top: 50px;}
+		#enjoy_product_tit_img>li{float: left;margin-right: 20px;text-align: center;letter-spacing: -2px;}
+		#enjoy_product_tit_img>li>h5{margin-top: 20px;font-weight: 500;color: #3b3b3b;font-size: 15px;}
+		#enjoy_product_tit_img>li>h4{margin-top: 8px;font-weight: 500;color: #3b3b3b;font-size: 14px;}
+		#enjoy_product_tit_img>li:last-child{margin-right: 0;}
+		/*  */
+		#information{width: 100%;height: 730px;background-color: #f4f3f0;}
+		#information_box{width: 1000px;height: 730px;margin: auto;text-align: center;overflow: hidden;}
+		#information_box>h2{font-size: 40px;color: #272830;letter-spacing: -2px;margin-top: 50px;}
+		#information_box>h4{margin-top: 20px;color: #272830;font-size: 19px;font-weight: 400;}
+		#information_box_notice{width: 1000px;height: 500px;margin-top: 45px;position: relative;text-align: center;}
+		#information_box_notice>li{width: 320px;height: 500px;margin-right: 20px;background-color: #fff;float: left;border-top: 2px solid #ff6600;border-right: 1px solid #ccc;border-bottom: 1px solid #ccc;;border-left: 1px solid #ccc;	box-sizing: border-box;}
+		#information_box_notice>li:nth-child(1){padding: 20px;box-sizing: border-box;}
+		#information_box_notice>li:nth-child(1)>ul{text-align-last: left;margin-top: 30px;border-bottom: 1px solid #000;
+		border-top: 1px solid #000;height: 380px;}
+		#information_box_notice>li:nth-child(1)>ul>li{font-size: 15px;border-bottom: 1px solid #ccc;padding: 16px;box-sizing: border-box;overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+		#information_box_notice>li:nth-child(1)>ul>li:last-child{border: none;}
+		#information_box_notice>li:last-child{}
+		#information_box_notice>li:nth-child(2){text-align: center;}
+		#information_box_notice>li:nth-child(2)>h2{margin-top: 50px;font-weight: 900;}
+		#information_box_notice>li:nth-child(2)>h4{font-weight: 400;}
+		#information_box_notice>li:nth-child(2)>#tday_line{width: 80%;height: 100px;margin: auto;border-top: 1px solid #ccc;margin-top: 20px;}
+		#information_box_notice>li:nth-child(2)>#tday_line>h3{margin-top: 10px;}
+		#information_box_notice>li:nth-child(2)>#tday_line>h1{color: #ff6600;}
+		#information_box_notice>li:nth-child(2)>table{width: 280px;height: 160px;margin: auto;border: 1px solid #ccc;}
+		#information_box_notice>li:nth-child(2)>table tr{text-align: center;}
+		#information_box_notice>li:nth-child(2)>table tr td{text-align: center;line-height: 50px;font-size: 16px;padding: 0 10px;color: #999;}
+		
+		#bt_today{width: 80%;margin: auto;margin-top: 10px;overflow: hidden;}
+		#bt_today>#bt_today_l{width: 45%;height: 35px;border-radius: 35px;border: 1px solid #ff6600;float: left;font-size: 12px;color: #ff6600;}
+		#bt_today>#bt_today_r{width: 45%;height: 35px;border-radius: 35px;border: 1px solid #892fd5;float: right;font-size: 12px;color: #892fd5;}
+
+		#information_box_notice>li:nth-child(3){width: 320px;height: 370px;margin-right: 0;}
+		#information_box_notice>li:nth-child(3)>#smart{width: 100%;height: 130px;background-color: #ff6600;text-align: center;padding: 30px;box-sizing: border-box;}
+		#information_box_notice>li:nth-child(3)>#smart>h2{color: #fff;}
+		#information_box_notice>li:nth-child(3)>#smart>h4{color: #fff;font-weight: 400;}
+		#information_box_notice>li:nth-child(3)>#smart_icon{width: 100%;}
+		#information_box_notice>li:nth-child(3)>#smart_icon>li{width: 50%;height: 60px;float: left;box-sizing: border-box;overflow: hidden;margin: 10px 0px;text-align: left;}
+		#information_box_notice>li:nth-child(3)>#smart_icon>li>.samrt_img{float: left;width: 50%;margin-top: 10px;margin-left: 10px;}
+		#information_box_notice>li:nth-child(3)>#smart_icon>li>h5{display: inline-block;vertical-align: middle;margin-top: 18px;color: #272830;height: 60px;}
+
+		#information_box_notice>li:nth-child(4){width: 320px;height: 120px;position: absolute;right: -20px;bottom: 0px;padding: 20px;box-sizing: border-box;}
+		#information_box_notice>li:nth-child(4)>#bus_left{width: 80px;float: left;}
+		#information_box_notice>li:nth-child(4)>#bus_left>img{width: 100%;}
+		#information_box_notice>li:nth-child(4)>#bus_right{width: 180px;float: right;}
+		#information_box_notice>li:nth-child(4)>#bus_right>h2{font-size: 15px;line-height: 25px;font-weight: 300;margin-top: 15px;float: left;color: #3b3b3b;}
+		#information_box_notice>li:nth-child(4)>#bus_right>h2>span{font-size: 16px;color: #892fd5;font-weight: 400;}
+		/*  */
+		#editor{width: 100%;height: 1050px;overflow: hidden;position: relative;}
+		#editor>button{width: 200px;height: 30px;border-radius: 30px;border: 1px solid #000;background-color: transparent;color: #000;position: absolute;left: 0;right: 0;margin: auto;}
+		#editor_line{width: 1000px;height: 1px;background-color: #666666;margin: auto;margin-top: 100px;}
+		#editor_tit{width: 320px;height: 65px;background-color: #fff;position: absolute;left: 0;right: 0;top: 60px;margin: auto;text-align: center;}
+		#editor_tit>h1{font-size: 40px;letter-spacing: -2px;}
+		#editor_box{width: 1000px;height: 750px;margin: auto;margin-top: 50px;}
+		#editor_box_img{width: 1000px;height: 750px;}
+		#editor_box_img>li{width: 250px;height: 375px;float: left;text-align: center;}
+		#editor_box_img>li>h4{margin-top: 10px;font-size: 13px;font-weight: 300;color: #3b3b3b;}
+		#editor_box_img>li>h3{font-size: 13px;font-weight: 400;color: #3b3b3b;}
+		#editor_box_img>li>.editor_box_img_box{width: 230px;height: 230px;border-radius: 150px;background-color: red;margin: auto;}
+		#editor_box_img>li:nth-child(1)>.editor_box_img_box{background: url(images/editor_clip1.jpg)center no-repeat;background-size: cover;}
+		#editor_box_img>li:nth-child(2)>.editor_box_img_box{background: url(images/editor_clip2.jpg)center no-repeat;background-size: cover;}
+		#editor_box_img>li:nth-child(3)>.editor_box_img_box{background: url(images/editor_clip3.jpg)center no-repeat;background-size: cover;}
+		#editor_box_img>li:nth-child(4)>.editor_box_img_box{background: url(images/editor_clip4.jpg)center no-repeat;background-size: cover;}
+		#editor_box_img>li:nth-child(5)>.editor_box_img_box{background: url(images/editor_clip5.jpg)center no-repeat;background-size: cover;}
+		#editor_box_img>li:nth-child(6)>.editor_box_img_box{background: url(images/editor_clip6.jpg)center no-repeat;background-size: cover;}
+		#editor_box_img>li:nth-child(7)>.editor_box_img_box{background: url(images/editor_clip7.jpg)center no-repeat;background-size: cover;}
+		#editor_box_img>li:nth-child(8)>.editor_box_img_box{background: url(images/editor_clip8.jpg)center no-repeat;background-size: cover;}
+</style></head><body>
+	<div id="hidden_banner">
+		<div id="top_banner_box">
+			<img src="images/img_top_banner.jpg" alt=""id="top_banner_img">
+			<p><input type="checkbox" name="" id="">1일간 열지않음<img src="icons/close.jpg" alt=""></p>
+		</div>
+
+	</div>
+		<header>
+			<div id="header1">
+				<div id="header1_menu1">
+					<h1><img src="icons/main_logo.jpg" alt=""></h1>
+					<ul id="header1_menu1_bt1">
+						<li><img src="icons/main_tab01_on.gif" alt=""></li>
+						<li><img src="icons/main_tab02_off.gif" alt=""></li>
+						<li><img src="icons/main_tab03_off.gif" alt=""></li>
+					</ul>
+					<ul id="header1_menu1_bt2">
+						<li><img src="icons/btn_reserve02_new.gif" alt=""></li>
+						<li><img src="icons/btn_everedu_reserve.gif" alt=""></li>
+						<li><img src="icons/btn_workshop_reserve.gif" alt=""></li>
+					</ul>
+				</div>
+
+			</div>
+			<div id="header2">
+				<div id="header2_menu_box">
+					<div id="header2_menu_search">
+						<input type="text">
+						<img src="icons/search.png" alt="">
+					</div>
+					
+					<h2><img src="images/logo_01el.gif" alt=""></h2>
+					<ul id="header2_menu_box_menu_bt">
+						<li>로그인</li>
+						<li>회원가입</li>
+						<li>손님상담센터</li>
+					</ul>
+				</div>
+			</div>
+			<div id="header3">
+				<div id="header3_menu_box">
+					<ul>
+						<li>이용정보</li>
+						<li>할인&이벤트</li>
+						<li>즐길거리</li>
+						<li>멤버십</li>
+						<li>에버랜드 더 알아보기</li>
+					</ul>
+					<img src="icons/logo_magicseed.png" alt="">
+				</div>
+			</div>
+
+		</header>
+<!--  -->
+		<div id="slide">
+			<div id="slide_txt">
+
+			</div>	
+			<ul id="slide_bt">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<!--  -->
+	<div id="new_product">
+		<div id="new_product_box">
+			<div id="new_product_box_tit">
+				<h2>※ 코로나 바이러스 감염증-19 관련 이용 안내</h2>
+			</div>
+			<div id="new_product_box_line"></div>
+			<div id="new_product_box_inner_box">
+				<h2>What's New</h2>
+				<h3>꿈과 환상의 나라로 어서로세요!</h3>
+			</div>
+			<ul id="new_product_img_box1">
+				<li>
+					<div class="img_fixde"><img src="images/new_product5.jpg" alt=""></div>
+					<h5>아기 호랑이</h5>
+					<h4>어흥 스쿨!</h4>
+				</li>
+				<li>
+					<div class="img_fixde"><img src="images/new_product2.jpg" alt=""></div>
+					<h5>아름다운 나비와함께</h5>
+					<h4>미리 봄을 만나보세요</h4>
+				</li>
+				<li>
+					<div class="img_fixde"><img src="images/new_product3.jpg" alt=""></div>
+					<h5>겨울방학 시즌권</h5>
+					<h4>전격 론칭!</h4>
+				</li>
+				<li>
+					<div class="img_fixde"><img src="images/new_product4.jpg" alt=""></div>
+					<h5>동물원 팬들 모여라!</h5>
+					<h4>네이버 카페'주토피아'오픈</h4>
+				</li>
+			</ul>
+			<ul id="new_product_img_box2">
+				<li>
+					<div class="img_fixde2"><img src="images/ad.jpg" alt=""></div>
+					<h5>레니의 대모험!</h5>
+					<h4>드래곤 성을 찾아서</h4>
+				</li>
+				<li>
+					<div class="img_fixde2"><img src="images/new_product6.jpg" alt=""></div>
+					<h5>마법으로 수놓은 밤하늘</h5>
+					<h4>로맨스 인 더 스카이</h4>
+				</li>
+				<li>
+					<div class="img_fixde2"><img src="images/new_product7.jpg" alt=""></div>
+					<h5>서울대 멘토와 함께하는</h5>
+					<h4>고교생활 멘토링 캠프</h4>
+				</li>
+				<li>
+					<div class="img_fixde2"><img src="images/new_product8.jpg" alt=""></div>
+					<h5>내가 직접 만드는</h5>
+					<h4>가든 LED 대형 스크린 컨텐츠</h4>
+				</li>
+			</ul>
+		</div>
+	</div>
+<!--  -->
+	<div id="tiket_promo">
+		<div id="tiket_promo_box">
+			<h2>Ticket Promotion</h2>
+			<h5>나에게 꼭 맞춘 알찬 할인 정보</h5>
+			<div id="tiket_promo_box_img">
+				<ul>
+				<li>
+					<h4>할인정보</h4>
+					<img src="images/ticket_promotion1.png" alt="">
+					<h3>스마트예약</h3>
+					<p>20,900원</p>
+				</li>
+				<li>
+					<h4>할인정보</h4>
+					<img src="images/ticket_promotion2.png" alt="">
+					<h3>BC카드</h3>
+					<p>전회원1+1우대</p>
+				</li>
+				<li>
+					<h4>할인정보</h4>
+					<img src="images/ticket_promotion3.png" alt="">
+					<h3>KT멤버십</h3>
+					<p>현장우대</p>
+				</li>
+				<li>
+					<h4>할인정보</h4>
+					<img src="images/ticket_promotion4.png" alt="">
+					<h3>2인/3인 세트권</h3>
+					<p>56,000원~</p>
+				</li>
+				<li>
+					<h4>할인정보</h4>
+					<img src="images/ticket_promotion5.png" alt="">
+					<h3>키즈패키지 2인권</h3>
+					<p>46,000원~</p>
+				</li>
+			</ul>
+			</div>
+			<div id="tiket_button">
+				<h3><span id="fw700">할인정보</span>자세히보기</h3><img src="icons/btn_arr_black.png" alt="">
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<div id="enjoy_product">
+		<div id="enjoy_product_box">
+			<div id="enjoy_product_tit">
+				<img src="images/el_vacation_title.jpg" alt=""></div>
+			<div id="enjoy_product_tit_line"></div>
+				<ul id="enjoy_product_tit_img">
+					<li>
+						<img src="images/joy1.jpg" alt="">
+						<h5>직접 줄서지 않고</h5>
+						<h4>스마트 줄서기</h4>
+					</li>
+					<li>
+						<img src="images/joy2.jpg" alt="">
+						<h5>편하고 여유있게</h5>
+						<h4>모바일 오더</h4>
+					</li>
+					<li>
+						<img src="images/joy3.jpg" alt="">
+						<h5>마음을 담아 선물하세요</h5>
+						<h4>모바일 기프트카드</h4>
+					</li>
+					<li>
+						<img src="images/joy4.jpg" alt="">
+						<h5>무궁이태범이</h5>
+						<h4>카카오톡 이모티콘 출시</h4>
+					</li>
+				</ul>
+		</div>
+	</div>
+	<!--  -->
+	<div id="information">
+		<div id="information_box">
+			<h2>Information</h2>
+			<h4>지금 바로 생생한 현장 소식</h4>
+			<ul id="information_box_notice">
+				<li>
+					<h2>NEWS & NOTICE</h2>
+					<h4>새로운 소식들</h4>
+					<ul>
+						<li>• [공지]코로나바이러스 감염증-19관련 안내</li>
+						<li>• [공지] 셔틀 버스 지연운행 공지</li>
+						<li>• (와디즈 펀딩) 호랑이가 나타났다!</li>
+						<li>• 동물원 팬 커뮤니티 <주토피아>네이버 카페</li>
+						<li>• [공지] 어트랙션 동계운휴 안내</li>
+						<li>• 레니의 대모험 휴연 안내(2/8~2/17)</li>
+						<li>• [공지] 연간 이용권 리뉴얼 안내</li>
+					</ul>
+				</li>
+				<li>
+					<h2>TODAY</h2>
+					<h4>오늘의 운영시간</h4>
+					<div id="tday_line">
+						<h3>02월 08일 (화)</h3>
+						<h1>10:00 - 19:00</h1>
+
+					</div>
+					<table>
+						<tr>
+							<td>12:00</td>
+							<td>•</td>
+							<td>아기 호랑이 어흥스쿨</td>
+						</tr>
+						<tr>
+							<td>13:00</td>
+							<td>•</td>
+							<td>아기 호랑이 어흥 스쿨</td>
+						</tr>
+						<tr>
+							<td>13:30</td>
+							<td>•</td>
+							<td>슈퍼윙스 애니멀 톡</td>
+						</tr>
+						<tr>
+							<td>14:30</td>
+							<td>• </td>
+							<td>슈퍼윙스 애니멀 톡</td>
+						</tr>
+					</table>
+					<div id="bt_today">
+						<button id="bt_today_l">공연시간 더 보기</button>
+						<button id="bt_today_r">어트랙션 운휴안내</button>
+					</div>
+				</li>
+				<li>
+					<div id="smart">
+						<h2>스마트예약</h2>
+						<h4>방문 전에 미리 준비!</h4>
+					</div>
+					<ul id="smart_icon">
+						<li>
+							<div class="samrt_img">
+								<img src="icons/ico_smart_reservation_01_01.png" alt="">
+							</div>
+							<h5>이용권</h5>
+						</li>
+						<li>
+							<div class="samrt_img">
+								<img src="icons/ico_smart_reservation_02_01.png" alt="">
+							</div>
+							<h5>연간이용권</h5>
+						</li>
+						<li>
+							<div class="samrt_img">
+								<img src="icons/ico_smart_reservation_03_01.png" alt="">
+							</div>
+							<h5>레스토랑
+								<br>
+								테라스</h5>
+						</li>
+						<li>
+							<div class="samrt_img">
+								<img src="icons/ico_smart_reservation_04_01.png" alt="">
+							</div>
+							<h5>체험<br>프로그램</h5>
+						</li>
+						<li>
+							<div class="samrt_img">
+								<img src="icons/ico_smart_reservation_05_01.png" alt="">
+							</div>
+							<h5>발렛파킹</h5>
+						</li>
+						<li>
+							<div class="samrt_img">
+								<img src="icons/ico_smart_reservation_06_01.png" alt="">
+							</div>
+							<h5>스페셜<br>패키지</h5>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<div id="bus_left">
+						<img src="icons/ico-traffic.png" alt="">
+					</div>
+					<div id="bus_right">
+						<h2>"우리집에서 에버랜드까지" <br> <span>대중교통•자가용</span>이용방법</h2>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<section id="editor">
+		<div id="editor_tit">
+			<h1>Editor's Clip</h1>
+		</div>
+		<div id="editor_line">
+		</div>
+		<div id="editor_box">
+			<ul id="editor_box_img">
+				<li>
+					<div class="editor_box_img_box">
+
+					</div>
+					<h4>500일 맞이한 푸바오</h4>
+					<h3>백신 맞는 아기판다!</h3>
+				</li>
+				<li>
+					<div class="editor_box_img_box">
+
+					</div>
+					<h4>우리집 식물</h4>
+					<h3>월동준비 TIP</h3>
+				</li>
+				<li>
+					<div class="editor_box_img_box">
+
+					</div>
+					<h4>스스로 퇴근 성공?</h4>
+					<h3>푸바오 사춘기</h3>
+				</li>
+				<li>
+					<div class="editor_box_img_box">
+
+					</div>
+					<h4>설원의 지휘자</h4>
+					<h3>한국호랑이의 멋</h3>
+				</li>
+				<li>
+					<div class="editor_box_img_box">
+
+					</div>
+					<h4>200만뷰 화제의 영상</h4>
+					<h3>T-Exp CAST 따라잡기</h3>
+				</li>
+				<li>
+					<div class="editor_box_img_box">
+
+					</div>
+					<h4>환상의 라이팅쇼</h4>
+					<h3>빛의 심포니</h3>
+				</li>
+				<li>
+					<div class="editor_box_img_box">
+
+					</div>
+					<h4>에버랜드에서 뭐 먹지?</h4>
+					<h3>겨울철 간식 소개</h3>
+				</li>
+				<li>
+					<div class="editor_box_img_box">
+
+					</div>
+					<h4>에버랜드가 전하는 응원</h4>
+					<h3>#덕분에 챌린지 #국민덕분에</h3>
+				</li>
+			</ul>
+		</div>
+		<button>더 많은 꿀팁 보러가기 </button>
+	</section>
+</body>
+</html>
